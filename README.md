@@ -22,31 +22,43 @@ Time spent: **7** hours spent in total
   
   - [ ] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/419c8d97ce8df7d5004ee0b566bc5e095f0a6ca8)
-1. (Required) Vulnerability Name or ID
+2. (Required) Authenticated Shortcode Tags XSS
   - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.7.2
+  - [ ] GIF Walkthrough: ![](comment.gif)
+  - [ ] Steps to recreate: 
+    - Make a comment as an admin with the code below.
+    ```
+    <a href = "XSS" onmouseover=alert(123) rel="nofollow">CLICK HERE!</a>
+    ```
+    - Hover over the link.
+  - [ ] Affected source code:
+    - [Link 1](https://github.com/WordPress/WordPress/commit/f72b21af23da6b6d54208e5c1d65ececdaa109c8)
+    
+1. (Required) Authenticated Cross-Site Scripting (XSS) via Media File Metadata
+  - [ ] Summary: 
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
+    - Fixed in version: 4.2.13
+  - [ ] GIF Walkthrough: ![](comment.gif)
   - [ ] Steps to recreate: 
   - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
-1. (Required) Vulnerability Name or ID
-  - [ ] Summary: 
-    - Vulnerability types:
-    - Tested in version:
-    - Fixed in version: 
-  - [ ] GIF Walkthrough: 
-  - [ ] Steps to recreate: 
-  - [ ] Affected source code:
-    - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
+    - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
 1. (Optional) Vulnerability Name or ID
   - [ ] Summary: 
     - Vulnerability types:
     - Tested in version:
     - Fixed in version: 
-  - [ ] GIF Walkthrough: 
+  - [ ] GIF Walkthrough: ![](media.gif)
   - [ ] Steps to recreate: 
+    - Create a page and press "Add Media"
+    - Click on "Create Audio Playlist" and select this file below.
+    ```
+    https://www.securify.nl/advisory/SFY20160742/xss.mp3
+    ```
+    
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
 1. (Optional) Vulnerability Name or ID

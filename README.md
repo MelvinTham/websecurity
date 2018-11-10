@@ -1,6 +1,6 @@
 # Project 7 - WordPress Pentesting
 
-Time spent: **X** hours spent in total
+Time spent: **7** hours spent in total
 
 > Objective: Find, analyze, recreate, and document **five vulnerabilities** affecting an old version of WordPress
 
@@ -8,12 +8,17 @@ Time spent: **X** hours spent in total
 
 1. (Required) Authenticated Stored Cross-Site Scripting (XSS) in YouTube URL Embeds
   - [ ] Summary: 
-    - Vulnerability types:XSS
-    - Tested in version:4.2
+    - Vulnerability types: XSS
+    - Tested in version: 4.2
     - Fixed in version: 4.2.13
   - [ ] GIF Walkthrough: ![](youtube.gif)
   - [x] Steps to recreate: 
-    -
+    - Create a page.
+    - Paste the code below.
+     ```
+     [embed src='https://youtube.com/embed/123\x3csvg onload=alert(123)\x3e'][/embed]
+     ```
+    - View the page.
   
   - [ ] Affected source code:
     - [Link 1](https://core.trac.wordpress.org/browser/tags/version/src/source_file.php)
@@ -71,7 +76,7 @@ Describe any challenges encountered while doing the work
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Melvin Tham]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.

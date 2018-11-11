@@ -52,9 +52,6 @@ Time spent: **7** hours spent in total
   - [x] Affected source code:
     - [Link 1](https://github.com/WordPress/WordPress/commit/28f838ca3ee205b6f39cd2bf23eb4e5f52796bd7)
 
-## Assets
-
-List any additional assets, such as scripts or files
 
 ## Resources
 
@@ -63,9 +60,6 @@ List any additional assets, such as scripts or files
 
 GIFs created with [LiceCap](http://www.cockos.com/licecap/).
 
-## Notes
-
-Describe any challenges encountered while doing the work
 
 ## License
 
